@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91665671CAEDEEA00D9EC14 /* GarbageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91665661CAEDEEA00D9EC14 /* GarbageNode.swift */; };
+		C92537E61C84CA0F00EA2FE5 /* AudioCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92537E51C84CA0F00EA2FE5 /* AudioCollection.swift */; };
+		C96783041CA4377F00269CB6 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96783031CA4377F00269CB6 /* AudioKit.framework */; };
+		C96783051CA4377F00269CB6 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C96783031CA4377F00269CB6 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C999B58D1CA318F000626CEB /* waveNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999B58C1CA318F000626CEB /* waveNode.swift */; };
+		C9D6EB2D1CA5A1E700896C50 /* NodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D6EB2C1CA5A1E700896C50 /* NodeMenu.swift */; };
+		C9E90BF11C4EBE4100D77A4E /* WaveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E90BF01C4EBE4100D77A4E /* WaveScene.swift */; };
 		C9FB7BB21C247BB300C0E079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB7BB11C247BB300C0E079 /* AppDelegate.swift */; };
 		C9FB7BB41C247BB300C0E079 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C9FB7BB31C247BB300C0E079 /* GameScene.sks */; };
 		C9FB7BB61C247BB400C0E079 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB7BB51C247BB300C0E079 /* GameScene.swift */; };
@@ -16,6 +23,7 @@
 		C9FB7BC01C247BB400C0E079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FB7BBE1C247BB400C0E079 /* LaunchScreen.storyboard */; };
 		C9FB7BCB1C247BB400C0E079 /* Wave_MachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB7BCA1C247BB400C0E079 /* Wave_MachineTests.swift */; };
 		C9FB7BD61C247BB400C0E079 /* Wave_MachineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB7BD51C247BB400C0E079 /* Wave_MachineUITests.swift */; };
+		C9FB7BE41C247DDC00C0E079 /* SoundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB7BE31C247DDC00C0E079 /* SoundNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +43,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C98BCDB01C6FB43A00EF8D54 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C96783051CA4377F00269CB6 /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C91665661CAEDEEA00D9EC14 /* GarbageNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarbageNode.swift; sourceTree = "<group>"; };
+		C92537E51C84CA0F00EA2FE5 /* AudioCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCollection.swift; sourceTree = "<group>"; };
+		C96783031CA4377F00269CB6 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		C999B58C1CA318F000626CEB /* waveNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = waveNode.swift; sourceTree = "<group>"; };
+		C9D6EB2C1CA5A1E700896C50 /* NodeMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeMenu.swift; sourceTree = "<group>"; };
+		C9E90BF01C4EBE4100D77A4E /* WaveScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveScene.swift; sourceTree = "<group>"; };
 		C9FB7BAE1C247BB300C0E079 /* Wave Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wave Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FB7BB11C247BB300C0E079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9FB7BB31C247BB300C0E079 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -51,6 +79,7 @@
 		C9FB7BD11C247BB400C0E079 /* Wave MachineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wave MachineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FB7BD51C247BB400C0E079 /* Wave_MachineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave_MachineUITests.swift; sourceTree = "<group>"; };
 		C9FB7BD71C247BB400C0E079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FB7BE31C247DDC00C0E079 /* SoundNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96783041CA4377F00269CB6 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +111,7 @@
 		C9FB7BA51C247BB300C0E079 = {
 			isa = PBXGroup;
 			children = (
+				C96783031CA4377F00269CB6 /* AudioKit.framework */,
 				C9FB7BB01C247BB300C0E079 /* Wave Machine */,
 				C9FB7BC91C247BB400C0E079 /* Wave MachineTests */,
 				C9FB7BD41C247BB400C0E079 /* Wave MachineUITests */,
@@ -104,6 +135,12 @@
 				C9FB7BB11C247BB300C0E079 /* AppDelegate.swift */,
 				C9FB7BB31C247BB300C0E079 /* GameScene.sks */,
 				C9FB7BB51C247BB300C0E079 /* GameScene.swift */,
+				C9E90BF01C4EBE4100D77A4E /* WaveScene.swift */,
+				C91665661CAEDEEA00D9EC14 /* GarbageNode.swift */,
+				C9D6EB2C1CA5A1E700896C50 /* NodeMenu.swift */,
+				C92537E51C84CA0F00EA2FE5 /* AudioCollection.swift */,
+				C9FB7BE31C247DDC00C0E079 /* SoundNode.swift */,
+				C999B58C1CA318F000626CEB /* waveNode.swift */,
 				C9FB7BB71C247BB400C0E079 /* GameViewController.swift */,
 				C9FB7BB91C247BB400C0E079 /* Main.storyboard */,
 				C9FB7BBC1C247BB400C0E079 /* Assets.xcassets */,
@@ -141,6 +178,7 @@
 				C9FB7BAA1C247BB300C0E079 /* Sources */,
 				C9FB7BAB1C247BB300C0E079 /* Frameworks */,
 				C9FB7BAC1C247BB300C0E079 /* Resources */,
+				C98BCDB01C6FB43A00EF8D54 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,9 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92537E61C84CA0F00EA2FE5 /* AudioCollection.swift in Sources */,
 				C9FB7BB61C247BB400C0E079 /* GameScene.swift in Sources */,
 				C9FB7BB81C247BB400C0E079 /* GameViewController.swift in Sources */,
 				C9FB7BB21C247BB300C0E079 /* AppDelegate.swift in Sources */,
+				C9D6EB2D1CA5A1E700896C50 /* NodeMenu.swift in Sources */,
+				C9FB7BE41C247DDC00C0E079 /* SoundNode.swift in Sources */,
+				C91665671CAEDEEA00D9EC14 /* GarbageNode.swift in Sources */,
+				C999B58D1CA318F000626CEB /* waveNode.swift in Sources */,
+				C9E90BF11C4EBE4100D77A4E /* WaveScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +452,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Wave Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mkschleg.Wave-Machine";
@@ -419,6 +467,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Wave Machine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mkschleg.Wave-Machine";
@@ -495,6 +547,7 @@
 				C9FB7BDC1C247BB400C0E079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9FB7BDD1C247BB400C0E079 /* Build configuration list for PBXNativeTarget "Wave MachineTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +556,7 @@
 				C9FB7BDF1C247BB400C0E079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9FB7BE01C247BB400C0E079 /* Build configuration list for PBXNativeTarget "Wave MachineUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +565,7 @@
 				C9FB7BE21C247BB400C0E079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
