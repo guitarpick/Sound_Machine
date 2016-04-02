@@ -69,38 +69,35 @@ class SoundNode: SKSpriteNode{
     
     init(audio:AKNode) {
       
-        audioNode = audio;
+			audioNode = audio;
 
 		
-        //Initialize Custom Properties
-        visualNode = SKShapeNode(circleOfRadius: visualSize)
-        visualNode.position = CGPoint(x: 0, y: 0)
-        visualNode.alpha = 0.8
-        visualNode.fillColor = UIColor.redColor()
-				visualNode.zPosition = 0
-        visualNode.physicsBody?.dynamic = false
-        visualNode.name = "SoundNodeVisual"
-		
-        octave = 4
-        frequency = 0
-        amplitude = 0
-        
-        //Super Initialization
-				super.init(texture: nil, color: UIColor.clearColor(), size: CGSize(width: visualSize, height: visualSize))
-        
-        //Initialize parent's properties
-        self.name = "SoundNode"
-        
-
-        self.addChild(visualNode)
+			//Initialize Custom Properties
+			visualNode = SKShapeNode(circleOfRadius: visualSize)
+			visualNode.position = CGPoint(x: 0, y: 0)
+			visualNode.alpha = 0.8
+			visualNode.fillColor = UIColor.redColor()
+			visualNode.zPosition = 0
+			visualNode.physicsBody?.dynamic = false
+			visualNode.name = "SoundNodeVisual"
+	
+			octave = 4
+			frequency = 0
+			amplitude = 0
 			
-        (audioNode as! AKOscillator).play()
-
-        
+			//Super Initialization
+			super.init(texture: nil, color: UIColor.clearColor(), size: CGSize(width: visualSize, height: visualSize))
+			
+			//Initialize parent's properties
+			self.name = "SoundNode"
+			
+			self.addChild(visualNode)
+		
+			(audioNode as! AKOscillator).play()
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+			fatalError("init(coder:) has not been implemented")
     }
     
     func setTo(freq:Double, amp:Double){
@@ -108,7 +105,7 @@ class SoundNode: SKSpriteNode{
     }
     
     func setTo(freq:Double){
-        setTo(freq,amp: self.amplitude)
+			setTo(freq,amp: self.amplitude)
     }
 }
 

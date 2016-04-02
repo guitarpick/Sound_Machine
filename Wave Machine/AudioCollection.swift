@@ -15,12 +15,12 @@ class AudioCollection {
   var audioNodes = [AKNode]()
   var audioNodesAvailable = [Bool]()
   
-  init(numNodes:Int){
+	init(numNodes:Int){
     
     for _ in 0...numNodes{
-		let newNode = AKOscillator()
-		audioNodes.append(newNode)
-    }
+			let newNode = AKOscillator()
+			audioNodes.append(newNode)
+		}
 	
     mixer = AKMixer(audioNodes[0])
     for i in 1...numNodes{
@@ -30,8 +30,8 @@ class AudioCollection {
     audioNodesAvailable = [Bool](count: numNodes, repeatedValue: true);
 
     AudioKit.output = mixer;
-	AudioKit.start()
-	mixer.start()
+		AudioKit.start()
+		mixer.start()
     
   }
   
@@ -41,8 +41,8 @@ class AudioCollection {
   
   func releaseNode(node: AKNode){
     audioNodesAvailable[(audioNodes.indexOf(node))!] = true
-	print(audioNodesAvailable)
-	(node as! AKOscillator).stop()
+		print(audioNodesAvailable)
+		(node as! AKOscillator).stop()
   }
   
   func getNextAvailableNode()->(AKNode?){
@@ -70,7 +70,5 @@ class AudioCollection {
 			}
 		}
 	}
-	
-  
 }
 
