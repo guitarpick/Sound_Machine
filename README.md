@@ -5,4 +5,6 @@ and updates the freq based on the position.  I use AudioKit to create the sound 
 audiokit.io
 
 
+This project is under the MIT License which can be found in the main repository.
+
 
